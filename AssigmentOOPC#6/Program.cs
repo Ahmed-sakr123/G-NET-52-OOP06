@@ -29,76 +29,89 @@
 
             //login.login();
 
-        
-
-        //abstract class Login
-        //{
-        //    public abstract void login();
-
-        //}
-        //class GoogleLogin : Login
-        //{
-        //    public override void login()
-        //    {
-        //        Console.WriteLine("Login with Google");
-        //    }
-        //}
-
-        //class FacebookLogin : Login
-        //{
-        //    public override void login()
-        //    {
-        //        Console.WriteLine("Login with Facebook");
-        //    }
-        //}
-        //class UsernamePasswordLogin : Login
-        //{
-        //    public override void login()
-        //    {
-        //        Console.WriteLine("Login with Username & Password");
-        //    }
-        //}
-
-        //public class Login
-        //{
-        //    private string passsword;
-        //    private int accountnumber;
-        //    public string Namee;
-
-        //    public int Accountnumber { get; set; }
-        //    public string Password
-        //    {
-        //        get
-        //        {
-        //            return passsword;
-        //        }
-
-        //        set
-        //        {
-        //            if (value.Length >= 8)
-        //            {
-        //                passsword = value;
-        //            }
-        //            else
-        //            {
-        //                Console.WriteLine("Password must be at least 8 characters.");
-        //            }
-        //        }
 
 
+            //abstract class Login
+            //{
+            //    public abstract void login();
+
+            //}
+            //class GoogleLogin : Login
+            //{
+            //    public override void login()
+            //    {
+            //        Console.WriteLine("Login with Google");
+            //    }
+            //}
+
+            //class FacebookLogin : Login
+            //{
+            //    public override void login()
+            //    {
+            //        Console.WriteLine("Login with Facebook");
+            //    }
+            //}
+            //class UsernamePasswordLogin : Login
+            //{
+            //    public override void login()
+            //    {
+            //        Console.WriteLine("Login with Username & Password");
+            //    }
+            //}
+
+            //public class Login
+            //{
+            //    private string passsword;
+            //    private int accountnumber;
+            //    public string Namee;
+
+            //    public int Accountnumber { get; set; }
+            //    public string Password
+            //    {
+            //        get
+            //        {
+            //            return passsword;
+            //        }
+
+            //        set
+            //        {
+            //            if (value.Length >= 8)
+            //            {
+            //                passsword = value;
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("Password must be at least 8 characters.");
+            //            }
+            //        }
 
 
 
-        //    }
-        //}
+
+
+            //    }
+            //}
 
 
             #endregion
 
+            #region Q2
+            /*
+             
+             Abstract Class represents "What you are." It provides shared implementation, can contain fields, constructors, and implemented methods, and a class can inherit from only one abstract class.
+             Interface represents "What you can do." It defines a contract (capability), does not contain fields or constructors, and a class can implement multiple interfaces.
+             When to choose each one?
+             Choose an Abstract Class when related classes share common data and behavior, and you want to provide a common implementation.
+             Choose an Interface when you want to define a common capability or contract that can be implemented by different classes, or when you need multiple implementations and loose coupling.
+             
+            */
+            #endregion
+
+
         }
 
 
-}
+    }
 }
 
 
