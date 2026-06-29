@@ -122,6 +122,51 @@
             */
             #endregion
 
+
+            #region Q4
+
+            /*a) What is a partial class? Why would a developer split Calculator into two files?
+
+             Answer:A partial class allows you to split a single class definition across multiple files — the compiler merges them into one class.
+              Organize large classes
+         
+              Split properties, methods, events into separate files
+
+              Team collaboration
+
+              Multiple developers work on the same class without conflicts
+
+              Enable code generation
+
+              Tools auto-generate one file, you customize in another
+
+              Protect manual code
+
+              Regenerating auto-code won't overwrite your custom logic
+
+
+
+              b) What is a partial method? What happens if the OnCalculated() implementation in 
+              If you don't implement the partial method, the compiler removes the call entirely — no error, no overhead
+             
+              c) What is an extension method? What are the three rules for writing one?
+              An extension method lets you add new methods to an existing type without modifying its source code, without inheritance, and without recompiling.\
+              static class
+
+              static method
+
+              this on 1st param
+
+
+
+              d) What will the following code print?
+              Calculator calc = new Calculator();
+              double result = calc.Add(19.5, 0.5);====>Log: result = 20
+              Console.WriteLine(result.ToCurrency());====>$20.00
+
+             */
+            #endregion
+
         }
 
 
