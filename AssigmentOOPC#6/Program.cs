@@ -166,6 +166,53 @@
 
              */
             #endregion
+            Cinema cinema = new Cinema();
+            cinema.Open();
+            // Ticket t = new Ticket("Test", 100);  // ERROR: Cannot create instance of abstract
+            // type 'Ticket'
+
+            StandardTicket t1 =
+                  new StandardTicket("Inception", 80, "A5");
+
+            VipTicket t2 =
+                new VipTicket("Avengers", 200, true, 50);
+
+            ImaxTicket t3 =
+                new ImaxTicket("Dune", 130, true);
+
+
+            t1.Book();
+            t2.Book();
+            t3.Book();
+
+            cinema.AddTicket(t1);
+            cinema.AddTicket(t2);
+            cinema.AddTicket(t1);
+
+
+          
+            cinema.PrintAllTickets();
+
+            Console.WriteLine("");
+            Console.WriteLine(" --- Polymorphism: Final Price per Ticket --- ");
+            Console.WriteLine($"StandardTicket => Final Price: {t1.CalculatePriceAfterTax()} ");
+            Console.WriteLine($"VIPTicket => Final Price: {t2.CalculatePriceAfterTax()} ");
+            Console.WriteLine($"IMAXTicket => Final Price: {t3.CalculatePriceAfterTax()} ");
+
+
+            Console.WriteLine("");
+
+            Console.WriteLine(" --- Extension Method: Receipt --- ");
+
+            string receipt = t2.GetReceipt();
+            Console.WriteLine(receipt);
+
+
+            Ticket[] tickets = 
+            {
+             t1,t2,t3
+            };
+            Console.WriteLine($" Total Revenue: {tickets.TotalRevenue()}");
 
         }
 
