@@ -107,6 +107,20 @@
             */
             #endregion
 
+            #region Q3
+            /*
+            a) Can you write: Appliance a = new Appliance("LG"); ? Why or why not?
+            Answer:No Abstract classes cannot be instantiated directly. They must be inherited by a derived class
+            b) What is the difference between the three methods: PowerConsumption(), Status(), and Label()? Why did the designer make each one abstract, virtual, or concrete?
+            Answer:PowerConsumption()===>Abstract Method
+            Status()===>Virtual Method
+            Label()====>Concatre Methods
+            c) If you call Status() on a Toaster object, what will it return? Why?
+            Answer:"Standby" ===>because value defualt
+
+             
+            */
+            #endregion
 
         }
 
